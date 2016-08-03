@@ -1,0 +1,80 @@
+@alegreya: 'Alegreya', serif;
+@roboto: 'Roboto', sans-serif;
+@inconsolata: 'Inconsolata', sans-serif;
+@buenard: 'Buenard', serif;
+
+.cc-heading {
+    font-family: @alegreya;
+    letter-spacing: .015rem;
+    margin: 0;
+}
+
+.cc-h1 {
+    .cc-heading;
+    font-size: 5.5rem;
+
+    @media (max-width: 1020px) {
+        font-size: 5rem;
+    }
+}
+
+.cc-h2 {
+    .cc-heading;
+    font-size: 3.7rem;
+    line-height: 1.5;
+
+    @media (max-width: 1020px) {
+        font-size: 3.4rem;
+    }
+}
+
+.cc-h3 {
+    .cc-heading;
+    font-size: 2.9rem;
+    line-height: 1.75;
+
+    @media (max-width: 1020px) {
+        font-size: 1.7rem;
+    }
+}
+
+.cc-h4 {
+    .cc-heading;
+    font-size: 2.5rem;
+    letter-spacing: .05rem;
+}
+
+.cc-h5 {
+    font-family: @roboto;
+    font-size: 2.3rem;
+}
+
+.cc-h6 {
+    .cc-heading;
+    font-size: 2rem;
+    line-height: 1.75;
+
+    @media (max-width: 1020px) {
+        font-size: 1.8rem;
+    }
+}
+
+.cc-h7 {
+    font-family: @inconsolata;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: .25rem;
+}
+a{
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,149 @@
+.page-header {
+
+  .top-bar-wrapper {
+    background-color: @cc-light-gray;
+  }
+
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: @inconsolata;
+  }
+
+  .header-block-container {
+    padding: 1.8rem .6rem 1.5rem;
+    line-height: 1;
+    font-size: 1.25rem;
+    p {
+      margin: 0;
+    }
+  }
+
+  .header-block-one-container {
+    padding-left: 0;
+    flex-grow: 1;
+    letter-spacing: .135rem;
+  }
+
+  .header-block-six-container {
+    font-weight: bold;
+  }
+
+  .header-block-seven-container {
+    font-family: @roboto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1.8rem 1.2rem 1.5rem;
+  }
+
+  > .content {
+    display: flex;
+    justify-content: space-between;
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  .nav-menu-wrapper {
+    flex-grow: 1;
+  }
+
+  .menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    font-family: @alegreya;
+    > .menu-item {
+      transition: .15s background-color ease-in-out;
+      position: relative;
+      &:hover {
+        background-color: @cc-light-gray;
+        > .submenu {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      > .submenu {
+        padding: 0;
+        background-color: @cc-light-gray;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: .15s opacity ease-in-out;
+      }
+    }
+    .menu-item-link, .submenu-item-link {
+      color: @cc-black;
+      padding: 1.5rem 2rem;
+      display: block;
+    }
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width : 1280px) {
+
+  .page-header {
+
+    .header-block-one-container {
+      padding-left: 1.6rem;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width : 768px) {
+
+  .page-header {
+
+    .header-block-one-container {
+      display: none;
+    }
+
+
+    .header-block-two-container, .header-block-three-container, .header-block-four-container, .header-block-five-container {
+      flex-grow: 1
+    }
+
+
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+
+  .page-header {
+
+    .header-block-one-container {
+      display: block;
+    }
+
+
+    .header-block-two-container, .header-block-three-container, .header-block-four-container, .header-block-five-container {
+      display: none;
+    }
+
+    .cart-text {
+      display: none;
+    }
+
+    .header-block-seven-container {
+      font-family: @roboto;
+      font-weight: bold;
+      font-size: 1.4rem;
+      padding: 1.8rem 1.7rem 1.5rem;
+    }
+
+  }
+
+}

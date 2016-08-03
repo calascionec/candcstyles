@@ -1,0 +1,93 @@
+.blue {
+  color: @cc-blue;
+  a{
+     color: @cc-blue;
+    &:hover {
+      color: darken(@cc-blue, 15%);
+    }
+   }
+}
+
+.bg-gray {
+  background-color: @cc-gray;
+}
+
+.bg-dark-gray {
+  background-color: @cc-dark-gray;
+}
+
+
+//CTA Buttons and Links
+
+.cta {
+    color: @button-cta-font-color;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    font-family: @inconsolata;
+
+    @media (max-width: 1020px) {
+        font-size: 1.2rem;
+    }
+}
+
+.button-cta {
+    .cta;
+    display: inline-block;
+    padding: 12px 26px;
+    border: 1px solid @button-cta-border-color;
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        background-color: @button-cta-border-color;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &.inverse {
+        color: #fff;
+        border-color: #fff;
+
+        &:hover {
+            border-color: @button-cta-border-color;
+        }
+    }
+}
+
+.link-cta {
+    .cta;
+
+    &:hover {
+        color: @cta-link-font-color-hover;
+        text-decoration: none;
+    }
+}
+
+//Inputs
+
+.input-text {
+    border: 1px solid @cc-black;
+    border-right: none;
+    padding: 16px 0 0 10px;
+    font-family: @inconsolata;
+    font-size: 1.3rem;
+    color: @cc-black;
+    letter-spacing: .14rem;
+    text-transform: uppercase;
+
+    &::placeholder {
+        font-family: @inconsolata;
+        font-size: 1.3rem;
+        color: @cc-black;
+        letter-spacing: .14rem;
+        text-transform: uppercase;
+    }
+}
+
+.subscribe-button {
+    background-color: @cc-gray;
+}

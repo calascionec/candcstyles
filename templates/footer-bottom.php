@@ -1,18 +1,15 @@
 <div class="footer-bottom">
     <div class="cc-container">
-        <ul class="footer-bottom-links">
-            <li>
+        <div class="footer-bottom-links-wrapper">
+            <div class="bottom-links">
                 <a class="footer-bottom-link" href="#">Terms of Use</a>
-            </li>
-            <li>
                 <a class="footer-bottom-link" href="#">Privacy Policy</a>
-            </li>
-            <li>
                 <a class="footer-bottom-link" href="#">Site Map</a>
-            </li>
-            <li class="copyright">
+            </div>
+
+            <div class="copyright">
                 © 2016 CHARLES &amp; COLVARD
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>

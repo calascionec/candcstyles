@@ -1,0 +1,232 @@
+.widget-background-images {
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1440px) {
+        background-position: center center;
+    }
+}
+
+.widget-min-height {
+    min-height: 555px;
+
+    @media (max-width: 1024px) {
+        min-height: 354px;
+    }
+
+    @media (max-width: 480px) {
+        min-height: 568px;
+        flex-direction: column;
+    }
+}
+
+.home-page-widget {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.example-widget {
+    .widget-min-height;
+    background-color: #F5DCD2;
+
+    .side {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .widget-background-images;
+    }
+
+    .side-one-copy {
+        color: #fff;
+        text-align: center;
+    }
+
+    .side-two {
+        flex-direction: column;
+    }
+
+    .side-two-padding-wrapper {
+        text-align: center;
+    }
+
+    .side-two-copy {
+        margin-bottom: 45px;
+    }
+}
+
+
+.three-blocks-widget {
+    padding: 40px 0;
+    max-width: 1250px;
+    margin: auto;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
+    .widget-block {
+        flex-basis: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 390px;
+        .widget-background-images;
+
+        @media (max-width: 480px) {
+            min-height: 284px;
+        }
+    }
+    .block-two {
+
+        .block-two-padding-wrapper {
+            text-align: center;
+            padding: 0 50px;
+        }
+
+        .block-two-copy {
+            font-size: 3rem;
+            margin-bottom: 30px;
+
+            @media (max-width: 480px) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.equal-width-sides-widget {
+    position: relative;
+    .widget-min-height;
+
+    .centered-text {
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 50px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .copy-text {
+        font-size: 3rem;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    .side {
+        .widget-background-images;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+.equal-width-sides-widget-two {
+    .widget-min-height;
+
+    .side-one-heading {
+        color: #fff;
+
+        @media (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .side {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        .widget-background-images;
+    }
+
+    .side-one-padding-wrapper {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 36px 70px;
+
+        @media (max-width: 480px) {
+            padding: 0 25px 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+    }
+
+    .side-two {
+        align-items: center;
+        justify-content: center;
+
+        .centered-text {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 35px 45px;
+
+            @media (max-width: 480px) {
+                padding: 30px 27px;
+            }
+        }
+
+        .copy-text {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.featured-stones-widget {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .featured-stones-padding-wrapper {
+        max-width: 1250px;
+        margin: auto;
+        padding: 80px 0;
+    }
+
+    .widget-heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .featured-stones {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .slick-slider {
+
+        @media (max-width: 768px) {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+    }
+
+    .featured-stone {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stone-image {
+        margin: 0 auto 20px;
+    }
+}

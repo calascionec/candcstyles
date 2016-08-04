@@ -4,28 +4,35 @@
         <div class="footer-nav-wrapper">
 
             <div class="link-list-container">
-                <h5 class="footer-nav-title">Company</h5>
 
-                <ul class="link-list">
-                    <li>
-                        <a class="footer-nav-link" href="#">The Charles &amp; Colvard Story</a>
-                    </li>
-                    <li>
-                        <a class="footer-nav-link" href="#">Leadership</a>
-                    </li>
-                    <li>
-                        <a class="footer-nav-link" href="#">News/Press Releases</a>
-                    </li>
-                    <li>
-                        <a class="footer-nav-link" href="#">Investor Relations</a>
-                    </li>
-                    <li>
-                        <a class="footer-nav-link" href="#">Careers</a>
-                    </li>
-                    <li>
-                        <a class="footer-nav-link" href="#">Blog</a>
-                    </li>
-                </ul>
+                <div data-role="collapsible">
+                    <div data-role="trigger">
+                        <h5 class="footer-nav-title">Company</h5>
+                    </div>
+                </div>
+
+                <div data-role="content">
+                    <ul class="link-list">
+                        <li>
+                            <a class="footer-nav-link" href="#">The Charles &amp; Colvard Story</a>
+                        </li>
+                        <li>
+                            <a class="footer-nav-link" href="#">Leadership</a>
+                        </li>
+                        <li>
+                            <a class="footer-nav-link" href="#">News/Press Releases</a>
+                        </li>
+                        <li>
+                            <a class="footer-nav-link" href="#">Investor Relations</a>
+                        </li>
+                        <li>
+                            <a class="footer-nav-link" href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a class="footer-nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
 
             </div><!--link-list-container-->
 
@@ -114,22 +121,21 @@
                     <button class="subscribe-button" type="button" name="button"><span>></span></button>
                 </form>
 
-                <div class="social-media-links">
-                    <ul>
-                        <li>
-                            <a class="social-media-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a class="social-media-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a class="social-media-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a class="social-media-link" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="social-media-links">
+                    <li class="social-media-link-wrapper">
+                        <a class="social-media-link" href="#"><i class="icon-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-media-link-wrapper">
+                        <a class="social-media-link" href="#"><i class="icon-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-media-link-wrapper">
+                        <a class="social-media-link" href="#"><i class="icon-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-media-link-wrapper">
+                        <a class="social-media-link" href="#"><i class="icon-pinterest" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+
 
             </div><!--subscribe-block-->
 

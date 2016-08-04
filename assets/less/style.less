@@ -14,10 +14,21 @@ body {
 @import "components/_components.less";
 @import "components/_header.less";
 @import "components/_footer.less";
+@import "components/_module.less";
 
 
 .cc-container {
-    max-width: 1260px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 
+    @media (min-width: 740px) {
+        width: 740px;
+    }
+    @media (min-width: 1021px) {
+        width: 980px;
+    }
+    @media (min-width: 1290px) {
+        width: 1260px;
+    }
 }

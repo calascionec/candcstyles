@@ -1,6 +1,6 @@
 <?php
 
-    $widget_heading = 'A cut above the rest. Shop jewelry by shape';
+    $widget_heading = 'A cut above the rest. Shop jewelry by shape.';
     $background_image = '/assets/images/background_rings.png';
     $image_one = '/assets/images/round.png';
     $link_text_one = 'Round >';
@@ -26,30 +26,35 @@ $featured_stones = array(
     [$image_five, $image_five_alt, $link_text_five, $link_url_five],
     );
  ?>
-<section class="featured-stones-widget" style='
-<?php if ( $background_image ) { echo "background-image: url(" . $background_image . ");";}?>'>
 
-    <div class="featured-stones-padding-wrapper">
+ <div class="cc-container">
 
-        <?php if ( $widget_heading ): ?>
-            <h2 class="widget-heading cc-h3"><?php echo $widget_heading; ?></h2>
-        <?php endif; ?>
+     <section class="featured-stones-widget home-page-widget" style='
+     <?php if ( $background_image ) { echo "background-image: url(" . $background_image . ");";}?>'>
 
-        <div class="featured-stones">
+         <div class="featured-stones-padding-wrapper">
 
-            <?php foreach ( $featured_stones as $stone ): ?>
+             <?php if ( $widget_heading ): ?>
+                 <h2 class="widget-heading cc-h3"><?php echo $widget_heading; ?></h2>
+             <?php endif; ?>
 
-                <div class="featured-stone">
+             <div class="featured-stones">
 
-                    <img class="stone-image" src="<?php echo $stone[0]; ?>" alt="<?php echo $stone[1]; ?>" />
-                    <a class="link-cta" href="<?php echo $stone[3]; ?>"><?php echo $stone[2]; ?></a>
+                 <?php foreach ( $featured_stones as $stone ): ?>
 
-                </div><!--featured-stone-->
+                     <div class="featured-stone">
 
-            <?php endforeach; ?>
+                         <img class="stone-image img-responsive" src="<?php echo $stone[0]; ?>" alt="<?php echo $stone[1]; ?>" />
+                         <a class="link-cta" href="<?php echo $stone[3]; ?>"><?php echo $stone[2]; ?></a>
 
-        </div><!--featured-stones-->
+                     </div><!--featured-stone-->
 
-    </div><!--featured-stones-padding-wrapper-->
+                 <?php endforeach; ?>
 
-</section><!--featured-stones-widget-->
+             </div><!--featured-stones-->
+
+         </div><!--featured-stones-padding-wrapper-->
+
+     </section><!--featured-stones-widget-->
+
+ </div>

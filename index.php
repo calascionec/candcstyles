@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <?php include('templates/nav.php'); ?>
         <?php include('templates/widgets/example.php'); ?>
         <?php include('templates/widgets/three_blocks.php'); ?>
         <?php include('templates/widgets/equal_width_sides.php'); ?>

@@ -1,11 +1,11 @@
 <?php
 
 
-    $side_one_copy = "Twenty years of expertise. One incredible gem.";
+    $side_one_copy = "Twenty years of expertise.<br/>One incredible gem.";
     $side_one_cta = "";
     $side_one_cta_link = "";
     $side_one_size = 2;
-    $side_two_copy = 'Revolutionary Brilliance. Colorless Beuty.';
+    $side_two_copy = 'Revolutionary Brilliance. Colorless Beauty.';
     $side_two_cta = 'Shop Forever One';
     $side_two_cta_link = 'www.google.com';
     $side_two_size = 1;
@@ -46,7 +46,7 @@
         <div class="side-two-padding-wrapper">
 
             <?php if ( $side_two_ring ): ?>
-                <img src="<?php echo $side_two_ring ?>" alt="Ring" />
+                <img class="img-responsive" src="<?php echo $side_two_ring ?>" alt="Ring" />
             <?php endif; ?>
 
             <?php if ( $side_two_copy ): ?>

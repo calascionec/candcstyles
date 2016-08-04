@@ -12,8 +12,9 @@
 .cc-h1 {
     .cc-heading;
     font-size: 5.5rem;
+    font-weight: 400;
 
-    @media (max-width: 1020px) {
+    @media (max-width: @tablet-lg) {
         font-size: 5rem;
     }
 }
@@ -22,6 +23,7 @@
     .cc-heading;
     font-size: 3.7rem;
     line-height: 1.5;
+    font-weight: 400;
 
     @media (max-width: 1020px) {
         font-size: 3.4rem;
@@ -32,10 +34,7 @@
     .cc-heading;
     font-size: 2.9rem;
     line-height: 1.75;
-
-    @media (max-width: 1020px) {
-        font-size: 1.7rem;
-    }
+    font-weight: 400;
 }
 
 .cc-h4 {
@@ -53,8 +52,9 @@
     .cc-heading;
     font-size: 2rem;
     line-height: 1.75;
+    font-weight: 400;
 
-    @media (max-width: 1020px) {
+    @media (max-width: @tablet-lg) {
         font-size: 1.8rem;
     }
 }
@@ -65,7 +65,8 @@
     font-size: 1.6rem;
     letter-spacing: .25rem;
 }
-a{
+
+a {
     text-decoration: none;
     &:hover {
         text-decoration: none;

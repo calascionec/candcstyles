@@ -2,9 +2,9 @@
 
     $side_one_image = '/assets/images/hand.jpg' ;
     $side_two_image = '/assets/images/measure.jpg' ;
-    $cta_text = 'Quality & Craftsmanship';
+    $cta_text = 'Quality & Craftsmanship >';
     $cta_link = 'www.google.com';
-    $copy_text = 'Grown, cut, polished and set. Brilliantly.'
+    $copy_text = 'Grown, cut,<br />polished and set.<br/>Brilliantly.'
 
 
  ?>

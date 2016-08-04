@@ -12,37 +12,44 @@
 
  ?>
 
+<div class="cc-container">
 
-<section class="three-blocks-widget home-page-widget">
+    <section class="three-blocks-widget home-page-widget">
 
-    <div class="widget-block block-one" style='
-    <?php if ( $block_one_image ) { echo "background-image: url(" . $block_one_image . ");";}?>'>
+        <div class="widget-block block-one" style='
+        <?php if ( $block_one_image ) { echo "background-image: url(" . $block_one_image . ");";}?>'>
 
-        <img src="<?php echo $block_one_ring; ?>" alt="<?php echo $block_one_alt_text; ?>" />
+            <div class="widget-block-one-padding-wrapper">
 
-    </div><!-- block-one -->
+                <img class="img-responsive" src="<?php echo $block_one_ring; ?>" alt="<?php echo $block_one_alt_text; ?>" />
 
-    <div class="widget-block block-two">
+            </div>
 
-        <div class="block-two-padding-wrapper">
+        </div><!-- block-one -->
 
-            <?php if ( $block_two_copy ): ?>
-                <h2 class="block-two-copy cc-h3">
-                    <?php echo $block_two_copy; ?>
-                </h2>
-            <?php endif; ?>
+        <div class="widget-block block-two">
 
-            <?php if ($block_two_cta && $block_two_cta_link ): ?>
-                <a class="button-cta" href="<?php echo $block_two_cta_link; ?>"><?php echo $block_two_cta ?></a>
-            <?php endif; ?>
+            <div class="block-two-padding-wrapper">
 
-        </div><!--block-two-padding-wrapper-->
+                <?php if ( $block_two_copy ): ?>
+                    <h2 class="block-two-copy cc-h3">
+                        <?php echo $block_two_copy; ?>
+                    </h2>
+                <?php endif; ?>
 
-    </div><!-- block-two -->
+                <?php if ($block_two_cta && $block_two_cta_link ): ?>
+                    <a class="button-cta" href="<?php echo $block_two_cta_link; ?>"><?php echo $block_two_cta ?></a>
+                <?php endif; ?>
 
-    <div class="widget-block block-three" style='
-    <?php if ( $block_three_image ) { echo "background-image: url(" . $block_three_image . ");";}?>'>
+            </div><!--block-two-padding-wrapper-->
 
-    </div><!-- block-three -->
+        </div><!-- block-two -->
 
-</section><!-- three-blocks-widget -->
+        <div class="widget-block block-three" style='
+        <?php if ( $block_three_image ) { echo "background-image: url(" . $block_three_image . ");";}?>'>
+
+        </div><!-- block-three -->
+
+    </section><!-- three-blocks-widget -->
+
+</div>

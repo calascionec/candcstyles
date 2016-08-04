@@ -6,7 +6,7 @@
     $side_one_cta_text = 'Shop Earrings';
     $side_one_cta_link = 'www.google.com';
     $side_two_image = '/assets/images/plant.jpg';
-    $side_two_copy_text = 'Made with care for those who choose with care.';
+    $side_two_copy_text = 'Made with care<br />for those who choose with care.';
     $side_two_cta_text = 'Sustainability >';
     $side_two_cta_link = 'www.google.com';
 

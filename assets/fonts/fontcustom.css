@@ -1,0 +1,83 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_de71970b1d98f062745f267e95aca452.eot");
+  src: url("./fontcustom_de71970b1d98f062745f267e95aca452.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_de71970b1d98f062745f267e95aca452.woff") format("woff"),
+       url("./fontcustom_de71970b1d98f062745f267e95aca452.ttf") format("truetype"),
+       url("./fontcustom_de71970b1d98f062745f267e95aca452.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_de71970b1d98f062745f267e95aca452.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-arrow-right:before,
+.icon-book:before,
+.icon-cards:before,
+.icon-cart:before,
+.icon-chat:before,
+.icon-close:before,
+.icon-email:before,
+.icon-facebook:before,
+.icon-gift:before,
+.icon-globe:before,
+.icon-hamburger:before,
+.icon-heart:before,
+.icon-instagram:before,
+.icon-knot:before,
+.icon-pencil:before,
+.icon-phone:before,
+.icon-pinterest:before,
+.icon-ring:before,
+.icon-search:before,
+.icon-slider-arrow-left:before,
+.icon-slider-arrow-right:before,
+.icon-twitter:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-arrow-right:before { content: "\f114"; }
+.icon-book:before { content: "\f10b"; }
+.icon-cards:before { content: "\f102"; }
+.icon-cart:before { content: "\f10c"; }
+.icon-chat:before { content: "\f103"; }
+.icon-close:before { content: "\f115"; }
+.icon-email:before { content: "\f104"; }
+.icon-facebook:before { content: "\f10d"; }
+.icon-gift:before { content: "\f105"; }
+.icon-globe:before { content: "\f10e"; }
+.icon-hamburger:before { content: "\f10a"; }
+.icon-heart:before { content: "\f10f"; }
+.icon-instagram:before { content: "\f110"; }
+.icon-knot:before { content: "\f109"; }
+.icon-pencil:before { content: "\f111"; }
+.icon-phone:before { content: "\f107"; }
+.icon-pinterest:before { content: "\f112"; }
+.icon-ring:before { content: "\f100"; }
+.icon-search:before { content: "\f116"; }
+.icon-slider-arrow-left:before { content: "\f117"; }
+.icon-slider-arrow-right:before { content: "\f118"; }
+.icon-twitter:before { content: "\f113"; }

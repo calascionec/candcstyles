@@ -1,6 +1,6 @@
 <div class="footer-top">
 
-    <div class="cc-container">
+    <div class="footer-top-container">
 
         <h5 class="footer-top-heading">
             Free shipping, lifetime warranty
@@ -8,27 +8,27 @@
 
         <ul class="footer-top-links-list">
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>Live Chat</a>
+                <a class="footer-top-link" href="#"><i class="icon-chat" aria-hidden="true"></i><span>Live Chat</span></a>
             </li>
 
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="mailto:"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</a>
+                <a class="footer-top-link" href="mailto:"><i class="icon-email" aria-hidden="true"></i><span>Email</span></a>
             </li>
 
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="tel:"><i class="fa fa-phone" aria-hidden="true"></i>8772025467</a>
+                <a class="footer-top-link" href="tel:"><i class="icon-phone" aria-hidden="true"></i><span>8772025467</span></a>
             </li>
 
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>Payment Options</a>
+                <a class="footer-top-link" href="#"><i class="icon-cards" aria-hidden="true"></i><span>Payment Options</span></a>
             </li>
 
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="#"><i class="fa fa-gift" aria-hidden="true"></i>Gift Cards</a>
+                <a class="footer-top-link" href="#"><i class="icon-gift" aria-hidden="true"></i><span>Gift Cards</span></a>
             </li>
 
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="#"><i></i>Lifetime Warranty</a>
+                <a class="footer-top-link" href="#"><i class="icon-knot"></i><span>Lifetime Warranty</span></a>
             </li>
         </ul><!--footer-top-links-list-->
 

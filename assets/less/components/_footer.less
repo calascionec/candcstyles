@@ -6,6 +6,10 @@
         padding: 25px;
     }
 
+    .footer-top-container {
+        max-width: 1260px;
+        margin: auto;
+    }
 
     .footer-top-heading {
         font-family: @buenard;
@@ -56,6 +60,12 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: .14rem;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+            font-size: 1.1rem;
+        }
 
         i {
             opacity: .5;

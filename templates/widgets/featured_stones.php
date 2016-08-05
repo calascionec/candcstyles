@@ -1,6 +1,6 @@
 <?php
 
-    $widget_heading = 'A cut above the rest. Shop jewelry by shape.';
+    $widget_heading = '<span class="hidden-mobile">A cut above the rest. </span>Shop jewelry by shape.';
     $background_image = '/assets/images/background_rings.png';
     $image_one = '/assets/images/round.png';
     $link_text_one = 'Round >';

@@ -10,7 +10,7 @@
         max-width: 1260px;
         margin: auto;
 
-        @media (max-width: 1024px) {
+        @media (max-width: @tablet-lg) {
             max-width: 870px;
         }
     }
@@ -36,10 +36,6 @@
 
         @media (max-width: @mobile-lg) {
             flex-direction: column;
-
-            li {
-                padding-bottom: 15px;
-            }
         }
     }
 
@@ -54,6 +50,7 @@
 
         @media (max-width: @mobile-lg) {
             justify-content: flex-start;
+            margin-bottom: 10px;
         }
     }
 
@@ -67,8 +64,12 @@
         display: flex;
         align-items: center;
 
-        @media (max-width: 1024px) {
+        @media (max-width: @tablet-lg) {
             font-size: 1.1rem;
+        }
+
+        @media (max-width: @mobile-lg) {
+            font-size: 1.3rem;
         }
 
         i {
@@ -87,6 +88,12 @@
 
     @media (max-width: @mobile-lg) {
         padding: 0;
+    }
+
+    .cc-container {
+        @media (max-width: @mobile-lg) {
+            padding: 0;
+        }
     }
 
     .footer-nav-wrapper {
@@ -111,9 +118,17 @@
         font-weight: 400;
         margin: 0 0 10px;
 
+        .icon-minus {
+            height: 1px;
+            padding-top: calc(~'14px / 2');
+        }
+
         @media (max-width: @mobile-lg) {
             margin-bottom: 0;
-            padding: 13px 10px 13px 20px;
+            padding: 13px 20px 13px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
         }
     }
 
@@ -123,7 +138,7 @@
         flex-direction: column;
 
         @media (max-width: @tablet-lg) {
-            flex-grow: 0
+            flex-grow: 0;
         }
 
         @media (max-width: @mobile-lg) {
@@ -132,16 +147,28 @@
 
     }
 
-
     .link-list {
+        transition: max-height .5s ease-in-out;
+        max-height: 999px;
 
         li {
             margin: 5px 0;
+
+            @media (max-width: @mobile-lg) {
+                &:last-of-type {
+                    margin-bottom: 10px;
+                }
+            }
         }
 
-
         @media (max-width: @mobile-lg) {
+            max-height: 0;
+            overflow: hidden;
             padding-left: 20px;
+
+            &.open {
+                max-height: 300px;
+            }
         }
     }
 
@@ -161,7 +188,7 @@
         flex-grow: 3;
         text-align: center;
 
-        @media (max-width: 1024px) {
+        @media (max-width: @tablet-lg) {
             flex-basis: 100%;
             display: flex;
             margin-top: 20px;
@@ -172,6 +199,7 @@
         @media (max-width: @mobile-lg) {
             background-color: #fff;
             flex-direction: column;
+            margin-top: 0;
         }
     }
 
@@ -184,7 +212,7 @@
             padding-right: 15px;
             margin-top: 20px;
 
-            @media (max-width: 1024px) {
+            @media (max-width: @tablet-lg) {
                 margin-top: 0;
             }
         }

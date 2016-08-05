@@ -57,4 +57,4 @@ $featured_stones = array(
 
      </section><!--featured-stones-widget-->
 
- </div>
+ </div><!--cc-container-->

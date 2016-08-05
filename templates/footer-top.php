@@ -16,7 +16,7 @@
             </li>
 
             <li class="footer-top-link-wrapper">
-                <a class="footer-top-link" href="tel:"><i class="icon-phone" aria-hidden="true"></i><span>8772025467</span></a>
+                <a class="footer-top-link" href="tel:"><i class="icon-phone" aria-hidden="true"></i><span><span class="visible-mobile">Call </span> 877-202-5467</span></a>
             </li>
 
             <li class="footer-top-link-wrapper">

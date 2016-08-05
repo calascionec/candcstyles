@@ -19,6 +19,7 @@ body {
 @import "components/_header.less";
 @import "components/_footer.less";
 @import "components/_module.less";
+@import "_slick.less";
 
 
 .cc-container {
@@ -30,7 +31,7 @@ body {
         width: 740px;
     }
     @media (min-width: 1021px) {
-        width: 740px;
+        width: 1021px;
     }
     @media (min-width: 1290px) {
         width: 1260px;
@@ -40,6 +41,13 @@ body {
 .hidden-mobile {
     @media (max-width: @mobile-lg) {
         display: none;
+    }
+}
+
+.visible-mobile {
+    display: none;
+    @media (max-width: @mobile-lg) {
+        display: inline-block;
     }
 }
 

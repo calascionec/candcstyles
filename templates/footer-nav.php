@@ -5,39 +5,34 @@
 
             <div class="link-list-container">
 
-                <div data-role="collapsible">
-                    <div data-role="trigger">
-                        <h5 class="footer-nav-title">Company</h5>
-                    </div>
-                </div>
+                <h5 class="footer-nav-title accordion-link"><span class="title">Company</span><i class="visible-mobile icon-plus"></i></h5>
 
-                <div data-role="content">
-                    <ul class="link-list">
-                        <li>
-                            <a class="footer-nav-link" href="#">The Charles &amp; Colvard Story</a>
-                        </li>
-                        <li>
-                            <a class="footer-nav-link" href="#">Leadership</a>
-                        </li>
-                        <li>
-                            <a class="footer-nav-link" href="#">News/Press Releases</a>
-                        </li>
-                        <li>
-                            <a class="footer-nav-link" href="#">Investor Relations</a>
-                        </li>
-                        <li>
-                            <a class="footer-nav-link" href="#">Careers</a>
-                        </li>
-                        <li>
-                            <a class="footer-nav-link" href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="link-list">
+                    <li>
+                        <a class="footer-nav-link" href="#">The Charles &amp; Colvard Story</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav-link" href="#">Leadership</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav-link" href="#">News/Press Releases</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav-link" href="#">Investor Relations</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav-link" href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
 
             </div><!--link-list-container-->
 
             <div class="link-list-container">
-                <h5 class="footer-nav-title">Customer Care</h5>
+
+                <h5 class="footer-nav-title accordion-link"><span class="title">Customer Care</span><i class="visible-mobile icon-plus"></i></h5>
 
                 <ul class="link-list">
                     <li>
@@ -79,7 +74,8 @@
             </div><!--link-list-container-->
 
             <div class="link-list-container">
-                <h5 class="footer-nav-title">Trade Partners</h5>
+
+                <h5 class="footer-nav-title accordion-link"><span class="title">Trade Partners</span><i class="visible-mobile icon-plus"></i></h5>
 
                 <ul class="link-list">
                     <li>
@@ -93,9 +89,10 @@
             </div><!--link-list-container-->
 
             <div class="link-list-container">
-                <h5 class="footer-nav-title">Where To Buy</h5>
 
-                <ul class="link-list">
+                <h5 class="footer-nav-title accordion-link"><span class="title">Where To Buy</span><i class="visible-mobile icon-plus"></i></h5>
+
+                <ul class="link-list collapsed">
                     <li>
                         <a class="footer-nav-link" href="#">Find A Store</a>
                     </li>

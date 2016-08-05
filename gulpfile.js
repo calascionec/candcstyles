@@ -27,14 +27,14 @@ gulp.task('squish-jquery', function () {
 
 // Minify Custom JS: Run manually with: "gulp build-js"
 gulp.task('build-js', function () {
-    return gulp.src('assets/js/*.js')
+    return gulp.src(['assets/js/rivers.js', 'assets/js/breakpoint.js', 'assets/js/slick.js', 'assets/js/breakpoint.js', 'assets/js/main.js'])
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'))
-        .pipe(plugins.uglify({
-            output: {
-                'ascii_only': true
-            }
-        }))
+        // .pipe(plugins.uglify({
+        //     output: {
+        //         'ascii_only': true
+        //     }
+        // }))
         .pipe(plugins.concat('scripts.min.js'))
         .pipe(gulp.dest('build'));
 });
@@ -68,7 +68,7 @@ gulp.task('build-css', function () {
 });
 
 // Default task
-gulp.task('watch', function () {
+gulp.task('watch', ['build-js', 'build-css'], function () {
     plugins.livereload.listen();
     gulp.watch('assets/js/libs/**/*.js', ['squish-jquery']);
     gulp.watch('assets/js/*.js', ['build-js']);

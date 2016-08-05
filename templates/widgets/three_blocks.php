@@ -52,4 +52,4 @@
 
     </section><!-- three-blocks-widget -->
 
-</div>
+</div><!--cc-container-->

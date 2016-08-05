@@ -14,7 +14,7 @@
         min-height: 354px;
     }
 
-    @media (max-width: 550px) {
+    @media (max-width: 600px) {
         min-height: 568px;
         flex-direction: column;
     }
@@ -29,7 +29,7 @@
     .widget-min-height;
     background-color: #F5DCD2;
 
-    @media (max-width: 550px) {
+    @media (max-width: 600px) {
         min-height: 0;
     }
 
@@ -43,7 +43,7 @@
     }
 
     .side-one {
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             display: none;
         }
     }
@@ -56,7 +56,7 @@
     .side-two {
         flex-direction: column;
 
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             padding: 50px 60px;
             flex-basis: 100%;
         }
@@ -69,7 +69,11 @@
             padding: 0 60px;
         }
 
-        @media (max-width: 550px) {
+        @media (max-width: 768px) {
+            padding: 0 18px;
+        }
+
+        @media (max-width: 600px) {
             padding: 0;
         }
     }
@@ -87,12 +91,12 @@
 .three-blocks-widget {
     padding: 40px 0;
 
-    @media (max-width: 550px) {
+    @media (max-width: 600px) {
         flex-wrap: wrap;
     }
 
     .block-one {
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             margin-right: 25px;
         }
     }
@@ -113,11 +117,15 @@
         @media (max-width: 1024px) {
             padding: 37px 40px;
         }
+
+        @media (max-width: 600px) {
+            padding: 10px;
+        }
     }
 
     .block-two {
 
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             order: 3;
             flex-basis: 100%;
             margin-top: 25px;
@@ -139,7 +147,7 @@
                 font-size: 1.7rem;
             }
 
-            @media (max-width: 550px) {
+            @media (max-width: 600px) {
                 font-size: 2rem;
             }
         }
@@ -203,8 +211,13 @@
         color: #fff;
         line-height: .7;
 
-        @media (max-width: 550px) {
+        @media (max-width: 768px) {
+            line-height: 1.75;
+        }
+
+        @media (max-width: 600px) {
             margin-bottom: 30px;
+            line-height: 1;
         }
     }
 
@@ -226,7 +239,7 @@
             padding-bottom: 45px;
         }
 
-        @media (max-width: 550px) {
+        @media (max-width: 768px) {
             padding: 0 25px 20px;
             flex-direction: column;
             align-items: flex-start;
@@ -268,6 +281,7 @@
     .featured-stones-padding-wrapper {
         padding: 40px 0;
         flex-grow: 1;
+        width: 100%;
     }
 
     .widget-heading {
@@ -309,6 +323,10 @@
 
         @media (max-width: 1024px) {
             width: 75%;
+        }
+
+        @media (max-width: 600px) {
+            width: initial;
         }
     }
 }

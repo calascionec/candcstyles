@@ -9,6 +9,10 @@
     .footer-top-container {
         max-width: 1260px;
         margin: auto;
+
+        @media (max-width: 1024px) {
+            max-width: 870px;
+        }
     }
 
     .footer-top-heading {
@@ -159,6 +163,10 @@
 
         @media (max-width: 1024px) {
             flex-basis: 100%;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
         }
 
         @media (max-width: @mobile-lg) {
@@ -174,6 +182,10 @@
         .social-media-link-wrapper {
             padding-right: 15px;
             margin-top: 20px;
+
+            @media (max-width: 1024px) {
+                margin-top: 0;
+            }
         }
 
         .social-media-link {

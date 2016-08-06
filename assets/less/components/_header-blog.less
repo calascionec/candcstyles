@@ -33,13 +33,19 @@
         font-size: 1.6rem;
         display: flex;
         justify-content: space-around;
-        padding: 13px 200px;
+        padding: 0 100px;
 
         .navigation-blog-link {
             color: @cc-black;
+            display: inline-block;
+            padding: 13px 45px;
 
             &:hover {
-                color: @cc-blue;
+                background-color: @cc-pink;
+            }
+
+            &.active {
+                background-color: @cc-pink;
             }
         }
 

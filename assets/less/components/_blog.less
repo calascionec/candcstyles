@@ -1,0 +1,141 @@
+.featured-blog-post-link {
+    color: @cc-black;
+
+    &:hover {
+        color: @cc-blue;
+
+        .featured-blog-post-image {
+            opacity: .7;
+        }
+    }
+}
+
+.featured-blog-post {
+    display: flex;
+    background-color: @cc-post-preview-background;
+
+    .left-side {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+    }
+
+    .category-icon {
+        font-size: 3rem;
+    }
+
+    .featured-blog-post-title {
+        font-family: @alegreya;
+        font-weight: 400;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        letter-spacing: .125em;
+        text-align: center;
+    }
+
+    .featured-blog-post-date {
+        font-family: @inconsolata;
+        font-weight: 400;
+        font-size: 1.4rem;
+        letter-spacing: .143em;
+        text-transform: uppercase;
+    }
+}
+
+.featured-blog-posts {
+    padding: 45px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-post-preview-link {
+    background-color: @cc-post-preview-background;
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: 32%;
+    flex-direction: column;
+    color: @cc-black;
+    margin-bottom: 40px;
+
+    &:hover {
+        color: @cc-blue;
+
+        .blog-post-preview-image {
+            opacity: .7;
+        }
+    }
+
+    &:nth-child(3n+2) {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .blog-post-preview-image {
+        width: 100%;
+    }
+
+    .blog-post-preview-title-wrapper {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 22px 50px;
+
+        .category-icon {
+            font-size: 1.6rem;
+        }
+
+        .blog-post-preview-title {
+            font-family: @alegreya;
+            font-size: 1.5rem;
+            letter-spacing: .167em;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.blog-instagram-feed {
+    background-color: @cc-pink;
+    padding: 35px 0 40px;
+
+    .instagram-flex-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-instagram-feed-title {
+        font-family: @alegreya;
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .blog-instagram-feed-subtitle {
+        font-family: @inconsolata;
+        font-weight: 400;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .instagram-slider {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.recent-posts {
+    padding: 35px 0 45px;
+    display: flex;
+    flex-wrap: wrap;
+}

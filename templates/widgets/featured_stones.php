@@ -17,6 +17,7 @@
     $image_five = '/assets/images/asscher.png';
     $link_text_five = 'Asscher >';
     $link_url_five = 'www.google.com';
+    $image_one_alt = $image_two_alt = $image_three_alt = $image_four_alt = $image_five_alt = "";
 
 $featured_stones = array(
     [$image_one, $image_one_alt, $link_text_one, $link_url_one],

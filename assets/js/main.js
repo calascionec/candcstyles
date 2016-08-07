@@ -15,8 +15,8 @@ $('document').ready(function(){
     Rivers.breakpoint.enter('phone', function() {
         $('.featured-stones').slick({
             slidesToShow: 1,
-            prevArrow: "<i class='icon-slider-arrow-left'></i>",
-            nextArrow: "<i class='icon-slider-arrow-right'></i>",
+            prevArrow: "<span class='previous-arrow'></span>",
+            nextArrow: "<span class='next-arrow'></span>",
         });
     }).leave('phone', function() {
         $('.featured-stones').slick('unslick');

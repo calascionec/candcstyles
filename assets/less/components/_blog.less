@@ -79,6 +79,17 @@
     &:nth-child(3n+2) {
         margin-left: 2%;
         margin-right: 2%;
+
+        @media (max-width: @mobile-lg) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (max-width: @mobile-lg) {
+        flex-basis: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .blog-post-preview-image {
@@ -94,6 +105,10 @@
         justify-content: center;
         align-items: center;
         padding: 20px 50px;
+
+        @media (max-width: @tablet-lg) {
+            padding: 20px 5px;
+        }
 
         .category-icon {
             font-size: 1.6rem;

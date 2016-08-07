@@ -121,6 +121,10 @@
         .icon-minus {
             height: 1px;
             padding-top: calc(~'14px / 2');
+
+            @media (min-width: 601px) {
+                display: none;
+            }
         }
 
         @media (max-width: @mobile-lg) {

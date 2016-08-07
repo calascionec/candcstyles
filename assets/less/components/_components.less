@@ -76,15 +76,23 @@
 
 //Inputs
 
+
+.subscribe-form {
+
+    @media (max-width: @tablet-lg) {
+        margin: 0 15px 15px;
+    }
+}
+
 .input-text {
     border: 1px solid @cc-black;
-    border-right: none;
-    padding: 16px 0 0 10px;
+    padding: 15px 0 15px 10px;
     font-family: @inconsolata;
     font-size: 1.3rem;
     color: @cc-black;
     letter-spacing: .14rem;
     text-transform: uppercase;
+    width: 282px;
 
     &::placeholder {
         font-family: @inconsolata;
@@ -97,4 +105,22 @@
 
 .subscribe-button {
     background-color: @cc-gray;
+    width: 44.24px;
+    height: 43px;
+    border: none;
+    margin-left: -48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-arrow {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 3px solid #fff;
+    transform: rotate(45deg);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    margin-left: -6px;
 }

@@ -113,9 +113,9 @@
 
                 <h5 class="footer-nav-title">Join Us</h5>
 
-                <form class="" action="index.html" method="post">
+                <form class="subscribe-form" action="index.html" method="post">
                     <input class="input-text" type="text" name="name" value="" placeholder="Your email">
-                    <button class="subscribe-button" type="button" name="button"><span>></span></button>
+                    <button class="subscribe-button" type="button" name="button"><span class="subscribe-arrow"></span></button>
                 </form>
 
                 <ul class="social-media-links">

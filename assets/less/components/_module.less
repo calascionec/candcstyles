@@ -297,6 +297,7 @@
     .featured-stones {
         display: flex;
         justify-content: space-around;
+        position: relative;
 
         @media (max-width: 1024px) {
             justify-content: space-between;
@@ -310,6 +311,31 @@
             table-layout: fixed;
             width: 100%;
         }
+    }
+
+    .arrows {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        border: 5px solid @cc-gray;
+        position: absolute;
+        z-index: 100;
+        top: 35px;
+    }
+
+    .previous-arrow {
+        .arrows;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        left: 0;
+    }
+
+    .next-arrow {
+        .arrows;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        right: 0;
     }
 
     .featured-stone {

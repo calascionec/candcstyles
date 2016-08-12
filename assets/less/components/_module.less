@@ -160,7 +160,8 @@
 
 .equal-width-sides-widget {
     position: relative;
-    .widget-min-height;
+    height: 0;
+    padding-bottom: 35%;
 
     .centered-text {
         position: absolute;
@@ -201,11 +202,26 @@
         .widget-background-images;
         flex-grow: 1;
         flex-basis: 0;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+    }
+
+    .side-one {
+        left: 0;
+    }
+
+    .side-two {
+        right: 0;
     }
 }
 
 .equal-width-sides-widget-two {
-    .widget-min-height;
+    position: relative;
+    height: 0;
+    padding-bottom: 35%;
 
     .side-one-heading {
         color: #fff;
@@ -222,10 +238,17 @@
     }
 
     .side {
-        flex-grow: 1;
-        flex-basis: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
         display: flex;
         .widget-background-images;
+    }
+
+    .side-one {
+        left: 0;
     }
 
     .side-one-padding-wrapper {
@@ -250,6 +273,7 @@
     .side-two {
         align-items: center;
         justify-content: center;
+        right: 0;
 
         .centered-text {
             background-color: #fff;

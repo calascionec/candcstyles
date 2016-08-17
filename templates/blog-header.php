@@ -1,4 +1,4 @@
-<div class="header-blog">
+<div class="blog-header">
 
     <div class="cc-container">
 
@@ -68,4 +68,4 @@
 
     </div><!--cc-container-->
 
-</div><!--header-blog-->
+</div><!--blog-header-->

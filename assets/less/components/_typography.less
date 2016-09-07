@@ -1,18 +1,19 @@
 @alegreya: 'Alegreya', serif;
 @roboto: 'Roboto', sans-serif;
-@inconsolata: 'Inconsolata', sans-serif;
+@inconsolata: 'Inconsolata', monospace;
 @buenard: 'Buenard', serif;
 
 .cc-heading {
     font-family: @alegreya;
-    letter-spacing: .15rem;
     margin: 0;
+    color: @cc-black;
 }
 
 .cc-h1 {
     .cc-heading;
     font-size: 5.5rem;
     font-weight: 400;
+    letter-spacing: .027em;
 
     @media (max-width: @tablet-lg) {
         font-size: 5rem;
@@ -24,6 +25,7 @@
     font-size: 3.7rem;
     line-height: 1.5;
     font-weight: 400;
+    letter-spacing: .041em;
 
     @media (max-width: 1020px) {
         font-size: 3.4rem;
@@ -33,26 +35,33 @@
 .cc-h3 {
     .cc-heading;
     font-size: 2.9rem;
-    line-height: 1.75;
+    line-height: 1.5;
     font-weight: 400;
+    letter-spacing: .052em;
 }
 
 .cc-h4 {
     .cc-heading;
     font-size: 2.5rem;
-    letter-spacing: .05rem;
+    letter-spacing: .06em;
+    line-height: 1.5;
 }
 
 .cc-h5 {
+    margin: 0;
     font-family: @roboto;
     font-size: 2.3rem;
+    line-height: 1.5;
+    letter-spacing: .022em;
+    color: @cc-black;
 }
 
 .cc-h6 {
     .cc-heading;
     font-size: 2rem;
-    line-height: 1.75;
+    line-height: 1.5;
     font-weight: 400;
+    letter-spacing: .075em;
 
     @media (max-width: @tablet-lg) {
         font-size: 1.8rem;
@@ -60,18 +69,72 @@
 }
 
 .cc-h7 {
+    margin: 0;
     font-family: @inconsolata;
     text-transform: uppercase;
     font-size: 1.6rem;
-    letter-spacing: .25rem;
+    letter-spacing: .156em;
+    color: @cc-black;
+}
+
+.cc-h8 {
+    margin: 0;
+    font-family: @alegreya;
+    font-size: 1.4rem;
+    letter-spacing: .107em;
+    line-height: 1.5;
+    color: @cc-black;
+}
+
+.main-body-copy {
+    font-family: @roboto;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: .0313em;
+    line-height: 1.5;
+    color: @cc-black;
+}
+
+.small-body-copy {
+    font-family: @roboto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: .033em;
+    line-height: 1.47;
+    color: @cc-black;
+}
+
+.smallest-body-copy {
+    font-family: @roboto;
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: .036em;
+    line-height: 1.5;
+    color: @cc-black;
 }
 
 a {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+    color: @cc-blue;
+    font-weight: 300;
+    font-family: @roboto;
+    font-size: 1.4rem;
+    letter-spacing: 0;
 
+    &:hover, &.hover {
+        text-decoration: none;
+        color: @cc-blue;
+
+        &.link-body {
+            text-decoration: underline;
+        }
+
+        &.link-footer:after, &.link-dropdown:after {
+            content: '>';
+            margin-left: 5px;
+            color: @cc-blue;
+        }
+    }
 }
 
 ul {
@@ -79,6 +142,7 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 
 .transition {
     transition: all .5s ease-in-out;

@@ -55,14 +55,12 @@ gulp.task('build-css', function () {
                     'firefox >= 4',
                     'safari 7',
                     'safari 8',
-                    'IE 8',
-                    'IE 9',
                     'IE 10',
                     'IE 11'
                 ],
             cascade: false
         }))
-        .pipe(plugins.cssmin())
+        //.pipe(plugins.cssmin())
         .pipe(gulp.dest('build')).on('error', gutil.log)
         .pipe(plugins.livereload());
 });

@@ -124,3 +124,38 @@
     border-left-color: transparent;
     margin-left: -6px;
 }
+
+.authorized-dealers-table {
+
+    td, th {
+        padding: 15px;
+    }
+
+    thead {
+        background-color: @cc-pink;
+    }
+
+    th {
+        font-family: @alegreya;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: @cc-black;
+        letter-spacing: .083em;
+        line-height: 2.08;
+    }
+
+    tbody {
+        tr {
+            font-family: @roboto;
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: @cc-black;
+            letter-spacing: 0;
+            line-height: 1;
+
+            &:nth-of-type(even) {
+                background-color: @cc-off-white;
+            }
+        }
+    }
+}

@@ -31,7 +31,7 @@
         bottom: 0;
     }
 
-    .story-top {
+    .hero {
         position: relative;
         padding: 115px 0;
         background-image: url('/assets/images/our-story.jpg');
@@ -71,6 +71,7 @@
     .panel {
         position: relative;
         text-align: center;
+        overflow: hidden;
 
         .next-arrow {
             width: 60px;
@@ -117,6 +118,28 @@
         &.one {
             background-color: #F5F0EB;
             padding: 235px 0;
+
+            .mandala-wrapper {
+                right: 434px;
+                top: -125px;
+                position: absolute;
+
+                @media (max-width: 767px) {
+                    top: -70px;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+
+                .mandala-responsive {
+                    width: 275%;
+                    height: 100%;
+                    position: relative;
+
+                    @media (max-width: 767px) {
+                        width: auto;
+                    }
+                }
+            }
 
             @media (max-width: 767px) {
                 padding: 83px 0;
